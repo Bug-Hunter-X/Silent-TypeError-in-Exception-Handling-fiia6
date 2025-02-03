@@ -1,0 +1,3 @@
+# Silent TypeError in Exception Handling
+
+This repository demonstrates a subtle bug in Python exception handling where a `TypeError` is silently masked, making debugging difficult.  The `function_with_uncommon_error` attempts to handle `KeyError` and other exceptions; however, it fails to explicitly address a `TypeError` that arises when the input `data` isn't a dictionary, potentially leading to unexpected results.  This example highlights the importance of comprehensive exception handling and detailed logging.
